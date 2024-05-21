@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@color/primaryColor">
+
+    <ImageView
+        android:layout_width="500dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logols"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp"
+        android:id="@+id/L_img_logo"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/L_img_logo"
+        android:layout_centerHorizontal="true"
+        android:text="Welcome!"
+        android:fontFamily="@font/poppinsbold"
+        android:textColor="@color/secondaryColor"
+        android:textSize="18dp"
+        android:id="@+id/L_txt_1"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/L_txt_1"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:id="@+id/L_ly_1">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/button_shape3"
+            android:drawableRight="@drawable/ic_email"
+            android:drawableTint="@color/secondaryColor"
+            android:hint="Enter Your Email!"
+            android:textColorHint="@color/onSecondaryColor"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:id="@+id/loginEmail"
+            android:fontFamily="@font/poppinsregular"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/button_shape3"
+            android:layout_marginTop="10dp"
+            android:drawableRight="@drawable/ic_lock"
+            android:drawableTint="@color/secondaryColor"
+            android:textColorHint="@color/onSecondaryColor"
+            android:hint="Enter Your Password!"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:id="@+id/loginPassword"
+            android:inputType="textPassword"
+            android:fontFamily="@font/poppinsregular"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/L_ly_1"
+        android:width="310dp"
+        android:text="Login"
+        android:fontFamily="@font/poppinsbold"
+        android:textColor="@color/primaryColor"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_shape2"
+        android:id="@+id/loginButton"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/loginButton"
+        android:gravity="center"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account?"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppinssemibold"
+            android:textSize="12sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Regist Now!"
+            android:fontFamily="@font/poppinssemibold"
+            android:textSize="12sp"
+            android:id="@+id/registerRedirectTxt"
+            android:textColor="@color/secondaryColor"/>
+    </LinearLayout>
+
+</RelativeLayout>

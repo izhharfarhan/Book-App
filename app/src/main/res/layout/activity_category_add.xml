@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryColor"
+    tools:context=".CategoryAddActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/tooolbar_shape">
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/transparent"
+            android:padding="5dp"
+            android:src="@drawable/ic_back_white"
+            android:contentDescription="Back Button"
+            app:tint="@color/primaryColor"
+            />
+
+        <ImageView
+            android:id="@+id/iconIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/backBtn"
+            android:src="@drawable/logolx"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iconIv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppinsbold"
+            android:text="Add a new Category"
+            android:textColor="@color/primaryColor"
+            android:textSize="25sp"/>
+
+    </RelativeLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/categoryTil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintEnabled="false"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="240dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/button_shape"
+            android:drawableStart="@drawable/ic_category"
+            android:drawableTint="@color/grey"
+            android:drawablePadding="10dp"
+            android:hint="Category Tittle"
+            android:textColorHint="@color/grey"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:id="@+id/catagoryEt"
+            android:fontFamily="@font/poppinsregular"
+            android:inputType="textPersonName|textCapWords"
+            android:padding="10dp"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Add Category Button -->
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_shape2"
+        android:text="Submit"
+        android:fontFamily="@font/poppinssemibold"
+        android:layout_below="@id/categoryTil"
+        android:textColor="@color/primaryColor"/>
+
+
+
+</RelativeLayout>
